@@ -9160,3 +9160,70 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .donor-box {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .donor-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    }
+    
+    .card-img {
+      transition: transform 0.5s ease;
+    }
+    
+    .donor-box:hover .card-img {
+      transform: scale(1.05);
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1.5rem !important;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+    
+    .carousel-control-prev:hover .carousel-control-prev-icon,
+    .carousel-control-next:hover .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .transparent-navbar {
+  background-color: transparent !important;
+  border: none;
+  z-index: 1000;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffd700 !important; /* Highlight color */
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.hero-wrap {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.hero-wrap .overlay {
+  background: rgba(0, 0, 0, 0.4); /* slight dark overlay for contrast */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
