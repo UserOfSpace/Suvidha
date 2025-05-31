@@ -9232,3 +9232,55 @@ textarea.form-control {
   top: 0;
   left: 0;
 }
+/* Make owl dots into orange numbered circles */
+.numbered-dots .owl-dot span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid orange;
+  color: orange;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Active circle with orange fill and white text */
+.numbered-dots .owl-dot.active span {
+  background-color: orange;
+  color: white;
+}
+
+.block-27 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.block-27 li a,
+.block-27 li span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid orange;
+  color: orange;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.block-27 li.active a {
+  background: orange;
+  color: white;
+}
+
