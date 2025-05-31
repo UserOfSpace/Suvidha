@@ -9339,3 +9339,7 @@ textarea.form-control {
     opacity: 0.8;
   }
 }
+/* Add spacing between footer icons and text */
+.ftco-footer .icon {
+  margin-right: 10px;
+}
