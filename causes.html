@@ -7,6 +7,10 @@
     
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+    
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -26,6 +30,64 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    .ftco-section {
+      padding: 60px 0;
+    }
+
+    .cause-entry {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .cause-entry .img {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .text {
+      padding: 20px;
+    }
+
+    .custom-progress-success {
+      height: 10px;
+      background-color: #e9ecef;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .progress-bar {
+      height: 10px;
+    }
+
+    .numbered-dots .owl-dot span {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 28px;
+      border-radius: 50%;
+      border: 2px solid #F96D00;
+      color: #F96D00;
+      font-weight: bold;
+      text-align: center;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .numbered-dots .owl-dot.active span {
+      background-color: #F96D00;
+      color: white;
+    }
+  </style>
   </head>
   <body>
     
@@ -67,111 +129,161 @@
     </div>
 
     
-    <section class="ftco-section">
-      <div class="container">
-      	<div class="row">
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-1.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3><a href="#">Clean water for the urban area</a></h3>
-    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-    					</div>
-    				</div>
-      		</div>
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-2.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3><a href="#">Clean water for the urban area</a></h3>
-    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-    					</div>
-    				</div>
-      		</div>
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-3.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3><a href="#">Clean water for the urban area</a></h3>
-    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-    					</div>
-    				</div>
-      		</div>
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-4.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3><a href="#">Clean water for the urban area</a></h3>
-    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-    					</div>
-    				</div>
-      		</div>
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-5.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3><a href="#">Clean water for the urban area</a></h3>
-    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-    					</div>
-    				</div>
-      		</div>
-      		<div class="col-md-4 ftco-animate">
-      			<div class="cause-entry">
-    					<a href="#" class="img" style="background-image: url(images/cause-6.jpg);"></a>
-    					<div class="text p-3 p-md-4">
-    						<h3><a href="#">Clean water for the urban area</a></h3>
-    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-    					</div>
-    				</div>
-      		</div>
-        </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
-            </div>
+<section class="ftco-section">
+  <div class="container">
+    <div class="owl-carousel owl-theme causes-carousel">
+      <!-- Cause 1 -->
+      <div class="cause-entry">
+        <a href="#" class="img" style="background-image: url('images/cause-1.jpg');"></a>
+        <div class="text">
+          <h3><a href="#">Clean water for the urban area</a></h3>
+          <p>Providing clean water access to underdeveloped urban areas.</p>
+          <span class="donation-time d-block">Last donation 1w ago</span>
+          <div class="progress custom-progress-success">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 28%"></div>
           </div>
+          <span class="fund-raised d-block">$12,000 raised of $30,000</span>
         </div>
       </div>
-    </section>
+
+      <!-- Cause 2 -->
+      <div class="cause-entry">
+        <a href="#" class="img" style="background-image: url('images/cause-2.jpg');"></a>
+        <div class="text">
+          <h3><a href="#">Education for every child</a></h3>
+          <p>Empowering children through education and resources.</p>
+          <span class="donation-time d-block">Last donation 3d ago</span>
+          <div class="progress custom-progress-success">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 45%"></div>
+          </div>
+          <span class="fund-raised d-block">$18,000 raised of $40,000</span>
+        </div>
+      </div>
+
+      <!-- Cause 3 -->
+      <div class="cause-entry">
+        <a href="#" class="img" style="background-image: url('images/cause-3.jpg');"></a>
+        <div class="text">
+          <h3><a href="#">Medical support for refugees</a></h3>
+          <p>Delivering essential medical aid to displaced communities.</p>
+          <span class="donation-time d-block">Last donation 2d ago</span>
+          <div class="progress custom-progress-success">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%"></div>
+          </div>
+          <span class="fund-raised d-block">$24,000 raised of $40,000</span>
+        </div>
+      </div>
+
+      <!-- Cause 4 -->
+      <div class="cause-entry">
+        <a href="#" class="img" style="background-image: url('images/cause-4.jpg');"></a>
+        <div class="text">
+          <h3><a href="#">Disaster relief initiative</a></h3>
+          <p>Supporting communities affected by natural disasters.</p>
+          <span class="donation-time d-block">Last donation 5d ago</span>
+          <div class="progress custom-progress-success">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 33%"></div>
+          </div>
+          <span class="fund-raised d-block">$9,900 raised of $30,000</span>
+        </div>
+      </div>
+
+      <!-- Cause 5 -->
+      <div class="cause-entry">
+        <a href="#" class="img" style="background-image: url('images/cause-5.jpg');"></a>
+        <div class="text">
+          <h3><a href="#">Food aid to remote villages</a></h3>
+          <p>Delivering food supplies to isolated and underserved regions.</p>
+          <span class="donation-time d-block">Last donation 4d ago</span>
+          <div class="progress custom-progress-success">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 40%"></div>
+          </div>
+          <span class="fund-raised d-block">$16,000 raised of $40,000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var $carousel = $('.causes-carousel');
+
+    // Initialize Owl Carousel
+    $carousel.owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: false, // Disable default dots
+      items: 3,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      onInitialized: buildCustomPagination,
+      onTranslated: updateCustomPagination,
+      responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1000: { items: 3 }
+      }
+    });
+
+    function buildCustomPagination(event) {
+      var count = event.item.count;
+      var paginationHTML = '<ul><li><a href="#" class="prev">&lt;</a></li>';
+
+      for (let i = 0; i < count; i++) {
+        paginationHTML += '<li><a href="#" class="goto-page" data-index="' + i + '">' + (i + 1) + '</a></li>';
+      }
+
+      paginationHTML += '<li><a href="#" class="next">&gt;</a></li></ul>';
+
+      $('.block-27').html(paginationHTML);
+
+      updateCustomPagination(event);
+    }
+
+    function updateCustomPagination(event) {
+      var index = event.item.index - event.relatedTarget._clones.length / 2;
+      var total = event.item.count;
+
+      index = (index % total + total) % total;
+
+      $('.block-27 li').removeClass('active');
+      $('.block-27 li').eq(index + 1).addClass('active');
+    }
+
+    // Event delegation for pagination controls
+    $('.block-27').on('click', '.goto-page', function (e) {
+      e.preventDefault();
+      var index = $(this).data('index');
+      $carousel.trigger('to.owl.carousel', [index, 300]);
+    });
+
+    $('.block-27').on('click', '.prev', function (e) {
+      e.preventDefault();
+      $carousel.trigger('prev.owl.carousel');
+    });
+
+    $('.block-27').on('click', '.next', function (e) {
+      e.preventDefault();
+      $carousel.trigger('next.owl.carousel');
+    });
+  });
+</script>
+
+
+<div class="row mt-5">
+  <div class="col text-center">
+    <div class="block-27"></div>
+  </div>
+</div>
+
+<br>
+
+
+    
 
     <section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">
     	<div class="overlay"></div>
