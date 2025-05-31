@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Suvida Foundation - Donate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -12,10 +13,10 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #fff7ed, #ffffff);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
       min-height: 100vh;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     .container {
@@ -25,18 +26,19 @@
 
     .header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .header h1 {
-      font-size: 2.5rem;
-      color: #333;
+      font-size: 2.8rem;
+      color: #ff5722;
+      font-weight: 600;
     }
 
     .header h2 {
-      color: #555;
+      color: #444;
+      font-size: 1.1rem;
       margin-top: 10px;
-      font-size: 1.25rem;
     }
 
     .main {
@@ -48,108 +50,125 @@
 
     .card {
       background: #fff;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
     .card video {
       width: 100%;
-      height: 400px;
+      height: 350px;
       object-fit: cover;
     }
 
     .card-content {
-      padding: 20px;
+      padding: 25px;
     }
 
     .card-content h3 {
-      font-size: 1.25rem;
-      color: #333;
+      font-size: 1.4rem;
+      color: #ff5722;
       margin-bottom: 10px;
     }
 
     .card-content p {
-      color: #666;
       font-size: 0.95rem;
+      color: #555;
       line-height: 1.6;
     }
 
     form {
       background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    form div {
+      margin-bottom: 20px;
     }
 
     label {
       display: block;
+      font-size: 0.95rem;
       font-weight: 600;
-      margin-bottom: 4px;
-      font-size: 0.9rem;
-      color: #444;
+      color: #333;
+      margin-bottom: 6px;
     }
 
     input {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border-radius: 6px;
+      padding: 12px 14px;
+      border-radius: 8px;
       border: 1px solid #ccc;
       font-size: 1rem;
+    }
+
+    input:focus {
+      border-color: #ff5722;
+      outline: none;
     }
 
     .phone-group {
       display: flex;
+      align-items: center;
     }
 
-    .phone-group span {
-      background: #eee;
-      border: 1px solid #ccc;
-      border-right: none;
-      padding: 10px 12px;
-      border-radius: 6px 0 0 6px;
-      font-size: 0.9rem;
-      color: #555;
-    }
+.phone-group span {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 12px 14px;
+  border-radius: 8px 0 0 8px;
+  font-size: 0.95rem;
+  color: #555;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  height: 48px; /* Match input height */
+}
 
-    .phone-group input {
-      border-radius: 0 6px 6px 0;
-      border-left: none;
-      margin-bottom: 20px;
-    }
+.phone-group input {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+  height: 48px; /* Match span height */
+}
 
-    .input-group {
+
+    /* Donation Amount Styling */
+    .rupee-input-wrapper {
       position: relative;
     }
 
-    .input-group span.icon {
+    .rupee-input-wrapper::before {
+      content: '₹';
       position: absolute;
       top: 50%;
-      left: 10px;
+      left: 14px;
       transform: translateY(-50%);
-      color: #aaa;
+      color: #555;
+      font-size: 1rem;
+      pointer-events: none;
     }
 
-    .input-group input {
+    .rupee-input-wrapper input {
       padding-left: 30px;
     }
 
     button {
-      background-color: #fb923c;
-      color: white;
-      border: none;
-      padding: 12px;
-      font-size: 1rem;
-      font-weight: 600;
-      border-radius: 6px;
-      cursor: pointer;
       width: 100%;
+      padding: 14px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background-color: #ff5722;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
       transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #f97316;
+      background-color: #e04e1c;
     }
 
     @media (max-width: 768px) {
@@ -167,21 +186,19 @@
   <div class="container">
     <div class="header">
       <h1>Suvida Foundation</h1>
-     <h2> 🤝Be a Donor - Change Lives</h2>
+      <h2>🤝 Be a Donor – Change Lives</h2>
     </div>
 
     <div class="main">
-      <!-- Video Card -->
+      <!-- Video Section -->
       <div class="card">
         <video controls autoplay muted loop>
-          <source src="images/video.mp4" type="video/mp4" />
+          <source src="images/video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="card-content">
           <h3>Your Donation Makes a Difference</h3>
-          <p>
-            Help us provide food and essential supplies to those in need. Every contribution counts toward creating a better future.
-          </p>
+          <p>Help us provide food, essentials, and hope to families in need. Every contribution brings us closer to a world of compassion.</p>
         </div>
       </div>
 
@@ -189,27 +206,26 @@
       <form>
         <div>
           <label for="name">Donor Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
         </div>
 
         <div>
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
         </div>
 
         <div>
           <label for="phone">Phone Number</label>
           <div class="phone-group">
             <span>+91</span>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="\d{10}" maxlength="10" required/>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit number" pattern="\d{10}" maxlength="10" required>
           </div>
         </div>
 
         <div>
           <label for="amount">Donation Amount (INR)</label>
-          <div class="input-group">
-            <span class="icon">₹</span>
-            <input type="number" id="amount" name="amount" placeholder="Enter amount" required />
+          <div class="rupee-input-wrapper">
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
           </div>
         </div>
 
