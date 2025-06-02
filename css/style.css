@@ -9284,7 +9284,7 @@ textarea.form-control {
   color: white;
 }
 
-/* === Updates for Home, About Page Donations Section === */
+/* === Latest Donations Section === */
 .ftco-section {
   padding: 4rem 0;
   /* keep original background as it is */
@@ -9298,13 +9298,13 @@ textarea.form-control {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #ffc107; /* updated border color */
+  border: 1px solid #fae0d0; /* subtle warm border */
 }
 
 .staff:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(255, 193, 7, 0.5); /* yellow shadow */
-  border-color: #e0a800;
+  box-shadow: 0 15px 30px rgba(250, 143, 61, 0.2); /* soft orange shadow */
+  border-color: #FA8F3D;
 }
 
 /* Thank You Badge */
@@ -9312,13 +9312,13 @@ textarea.form-control {
   position: absolute;
   top: -10px;
   right: -10px;
-  background: #ffc107;
+  background: #F86E2D;
   color: #fff;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
   border-radius: 16px;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+  box-shadow: 0 4px 8px rgba(248, 110, 45, 0.25);
 }
 
 /* Donor Image */
@@ -9329,14 +9329,14 @@ textarea.form-control {
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
-  border: 3px solid #e0a800;
-  box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+  border: 3px solid #f4f4f4;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .staff .img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 12px rgba(255, 193, 7, 0.6);
+  box-shadow: 0 0 12px rgba(250, 143, 61, 0.2);
 }
 
 /* Donor Info */
@@ -9348,18 +9348,18 @@ textarea.form-control {
 
 .staff .info h3 a {
   font-size: 1.2rem;
-  color: #e0a800;
+  color: #2d3436;
   font-weight: 600;
   text-decoration: none;
 }
 
 .staff .info h3 a:hover {
-  color: #ffc107;
+  color: #F86E2D;
 }
 
 .staff .info .position {
   font-size: 0.9rem;
-  color: #e0a800;
+  color: #777;
   margin-bottom: 0.5rem;
 }
 
@@ -9369,20 +9369,23 @@ textarea.form-control {
   color: #2d3436;
 }
 
+/* Donation amount - green color */
 .staff .info .text span {
-  color: #ffc107;
-  font-weight: 600;
+  color: #28a745; /* green for money */
+  font-weight: 700;
+  font-size: 1.1rem;
+  animation: pulse-glow-green 2s infinite;
 }
 
 .staff .info .text a {
-  color: #e0a800;
+  color: #F86E2D;
   text-decoration: none;
   font-weight: 500;
 }
 
 .staff .info .text a:hover {
   text-decoration: underline;
-  color: #ffc107;
+  color: #FAAA3B;
 }
 
 /* Responsive Adjustments */
@@ -9402,18 +9405,9 @@ textarea.form-control {
   }
 }
 
-/* extra */
-.staff .info .text span {
-  color: #ffc107;
-  font-weight: 700;
-  font-size: 1.1rem;
-  animation: pulse-glow 2s infinite;
+/* Glow Animation for green donation amount */
+@keyframes pulse-glow-green {
+  0% { text-shadow: 0 0 5px #28a745; }
+  50% { text-shadow: 0 0 15px #218838; }
+  100% { text-shadow: 0 0 5px #28a745; }
 }
-
-/* Glow Animation */
-@keyframes pulse-glow {
-  0% { text-shadow: 0 0 5px #ffc107; }
-  50% { text-shadow: 0 0 15px #e0a800; }
-  100% { text-shadow: 0 0 5px #ffc107; }
-}
-
