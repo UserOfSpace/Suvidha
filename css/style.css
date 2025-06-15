@@ -9473,3 +9473,97 @@ textarea.form-control {
     opacity: 0.8;
   }
 }
+
+/* Our Team Section */
+.team-box {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-box:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3), transparent);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.overlay-content {
+  transition: transform 0.3s ease;
+}
+
+.team-box:hover .overlay-content {
+  transform: translateY(-10px); /* Slide upward on hover */
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.designation {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.linkedin-icon {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+  height: 28px;
+}
+
+.team-box:hover .linkedin-icon {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Fix layout if LinkedIn icon is missing */
+.linkedin-icon:empty {
+  display: none;
+  height: 0;
+  margin-top: 0;
+}
+
+.linkedin-icon img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.linkedin-icon img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    height: 250px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .designation {
+    font-size: 0.95rem;
+  }
+}
