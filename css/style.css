@@ -8823,11 +8823,32 @@ textarea.form-control {
     .block-4 .nonloop .owl-dots .owl-dot.active {
       background: #f86f2d; }
 
+/* Contact.html section */
+.contact-section h2 {
+  font-size: 34px;
+  font-weight: 400;
+  font-family: 'Dosis', Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 47.6px;
+  margin-bottom: 24px;
+}
+
+
 .contact-section .contact-info p a {
-  color: #fa8f3d; }
+  color: #fa8f3d;
+  font-size: 20px;  
+  font-weight: 600;  
+  display: inline-block;
+  margin-bottom: 10px;
+}
 
 .contact-section .contact-info p span {
-  color: #000; }
+  color: #000;
+  font-size: 20px;   
+  font-weight: 600;  
+}
+
 
 .block-9 .form-control {
   outline: none !important;
