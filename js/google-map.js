@@ -1,3 +1,14 @@
+/*
+
+### Dont really need this part since using iframe for map in contact.html 
+
+-----------------------------------------------------------------------------------------------------------
+
+  NOTE: This script adds a custom-styled, interactive Google Map with markers using the Maps JavaScript API.
+  Currently commented out in favor of a simpler <iframe> embed for better performance and easier maintenance.
+  Re-enable this script only if custom map styles, dynamic markers, or advanced interactivity are required.
+
+-----------------------------------------------------------------------------------------------------------
 
 var google;
 
@@ -60,3 +71,7 @@ function init() {
     
 }
 google.maps.event.addDomListener(window, 'load', init);
+
+
+
+*/
